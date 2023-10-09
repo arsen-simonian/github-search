@@ -1,0 +1,25 @@
+@import ../../sass/_variables
+
+.pagination
+  width: 100%
+  display: flex
+  justify-content: center
+  gap: 1rem
+  margin-top: 2rem
+  flex-wrap: wrap
+  &__item
+    font-size: 1.7rem
+    padding: 0.4rem 1.1rem
+    border: 0.1rem solid $color-gray-light
+    border-radius: 0.8rem
+    cursor: pointer
+    transition-duration: 200ms
+    &:hover
+      background-color: $color-gray-light
+    &__active
+      border: 0.1rem solid $color-gray-dark
+      background-color: $color-gray-light
+  &__dots
+    font-size: 2rem
+    padding: 0.4rem 1.1rem
+    border-radius: 0.8rem

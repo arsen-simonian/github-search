@@ -1,0 +1,45 @@
+@import ../../../../sass/_variables
+@import ../../../../sass/_typography
+
+.repository_details
+  width: 100%
+  max-width: 120rem
+  margin: 0 auto
+  padding: 2rem
+  flex-wrap: wrap
+  display: flex
+  gap: 0 15rem
+  &__owner_avatar
+    width: 4rem
+    height: 4rem
+    border-radius: 50%
+  &__title
+    width: 100%
+    display: flex
+    align-items: center
+    gap: 2rem
+    margin-top: 4rem
+    font-size: 2rem
+    flex-wrap: wrap
+    overflow: hidden
+    text-overflow: ellipsis
+    &__btn
+      border-radius: 50%
+      padding: 0.8rem 0.7em
+      display: flex
+      align-items: center
+      justify-content: center
+    h2
+      @extend .title_2
+      text-overflow: ellipsis
+      overflow: hidden
+  &__section
+    margin-top: 5rem
+    &_full
+      width: 100%
+    h2
+      margin: 2rem 0
+    &__row
+      display: flex
+      align-items: center
+      gap: 2rem
